@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/Mlog.min.js"></script>
+    <title>Mlog Test Page</title>
+    <script>
+        var testObj = {
+            name:'Mlog',
+            version:'0.1.0',
+            des:{
+                author:'Marico',
+                email:'ok@nongshiye.com',
+                QQ:376714476,
+                time:'2018-06-15'
+            }
+        }
+        window.onload=function(){
+            var mlog = new Mlog();
+            console.log(testObj)
+            document.getElementById("showMlog").onclick=function(){
+                mlog.show();
+            }
+        }
+    </script>
+</head>
+<body>
+   <button id="showMlog">showMlog</button>
+</body>
+</html>
