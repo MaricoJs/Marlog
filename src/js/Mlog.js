@@ -1,3 +1,7 @@
+/**
+ * @author Marico <ok@nongshiye.com>
+ * @description A console program whitch can shou consoled logs in pages
+ */
 'use strict';
 function Mlog(opt) {
 	if (window.getMlog && typeof window.getMlog == 'function' && getMlog() instanceof Mlog) {
@@ -142,7 +146,7 @@ function Mlog(opt) {
 		div.className = 'mlogWrapper';
 		return div;
 	}
-	let addWrapper = function (div) {	
+	let addWrapper = function (div) {
 		document.body.appendChild(div);
 		$container = document.getElementById("mlogMain");
 		return new Promise((resolve) => {
