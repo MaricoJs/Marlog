@@ -30,7 +30,7 @@
 
   ①引入js文件
 	<pre>
-	<code><script src="https://marlog.nongshiye.com/js/Mlog.min.js" /></code>
+	<code><script src="https://marlog.nongshiye.com/js/Mlog.min.js"></script></code>
 	</pre>	
   ②初始化Mlog
 	<pre>
